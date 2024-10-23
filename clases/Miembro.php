@@ -1,11 +1,11 @@
 <?php
     abstract class Miembro{
         #Atributos de la clase padre Miembro
-        private $id;
+        private int $id;
         private $nombre;
         private $apellidos;
         private $email;
-        private $edad;
+        private int $edad;
 
         #Métodos de la clase padre Miembro
 
