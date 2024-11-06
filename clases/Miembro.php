@@ -5,17 +5,15 @@
         private $nombre;
         private $apellidos;
         private $email;
-        private int $edad;
 
         #Métodos de la clase padre Miembro
 
         //CONSTRUCTOR
-        public function __construct($id, $nombre, $apellidos, $email, $edad){
+        public function __construct($id, $nombre, $apellidos, $email){
             $this->id = $id;
             $this->nombre = $nombre;
             $this->apellidos = $apellidos;
             $this->email = $email;
-            $this->edad = $edad;
         }
 
         //GETTERS
@@ -31,9 +29,6 @@
         public function getEmail(){
             return $this->email;
         }
-        public function getEdad(){
-            return $this->edad;
-        }
 
         //SETTERS
         public function setId($id){
@@ -48,12 +43,9 @@
         public function setEmail($email) {
             $this->email = $email;
         }
-        public function setEdad($edad) {
-            $this->edad = $edad;
-        }
 
         //TOSTRING
         public function tostring(){
-            return $this->id ." ". $this->nombre . " " . $this->apellidos . " " . $this->email . " " . $this->edad;
+            return "Id: " . $this->id ." Nombre: ". $this->nombre . " Apellido: " . $this->apellidos . " email: " . $this->email;
         }
     }
